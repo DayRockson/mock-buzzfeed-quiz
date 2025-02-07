@@ -1,0 +1,144 @@
+:root {
+    --main-colour: #9896f1;
+    --final-colour: #8ef6e4;
+    --answer-colour: #c3bef0;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 600px;
+}
+
+h1, h2 {
+    line-height: 1.05;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.3rem;
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: auto;
+}
+
+.heading-sub {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    
+}
+
+.title-block {
+    width: 600px;
+    background: var(--main-colour);
+    height: 210px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
+
+.answer-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 16px 0 23px 0;
+}
+
+.answer-block {
+    width: 280px;
+    height: 380px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.answer-block:hover {
+    border: 4px solid var(--main-colour);
+}
+
+.answer-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.answer-title {
+    font-size: 25px;
+    font-weight: bold;
+    background: var(--answer-colour);
+    padding: 20px 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+}
+
+.toggle-img {
+    display: none;
+}
+
+.toggle-block {
+    height: fit-content;
+}
+
+.toggle-incorrect {
+    border: 4px solid red;
+}
+
+.answer-block p {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.answer-block a {
+    color: #898989;
+}
+
+.result-block {
+    width: 600px;
+    background: var(--final-colour);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+}
+
+.final-answer {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.final-title {
+    font-size: 25px;
+    font-weight: bold;
+    background: var(--final-colour);
+    padding: 20px 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
